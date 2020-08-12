@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Things Subaru</title>
+    <script src="JS/one_page_website.js" defer></script>
+	<link rel="stylesheet" href="CSS/one_page_website.css">
+</head>
+<body>
+    	
+		<!-- NAV -->
+		<div>
+			<div>
+				<nav>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#videos"><li>VIDEOS</li></a>
+					<a href="#discussions"><li>DISCUSSIONS</li></a>
+				</nav>
+			</div>
+		</div>
+        
+        <!-- HOME -->
+		<div id="home">
+			<div>
+				<div>
+					<h1>Subaru Enthusiast Group</h1>
+					<p>Hey Subaru fans! Come check out the fan-made gallery and join us on the discussions <br>
+					page, with new topics created each day, we hope to see you all there!</p>
+				</div>
+			</div>
+        </div>
+        
+        <!-- GALLERY IMG used to open lightbox -->
+       <!-- <section>-->
+			<div id="gallery">
+				<br><br>
+				<h1>Gallery</h1>
+				<br><br>
+				<div class="row">
+                    <div class="column">
+                        <img src="Images/22B.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="Images/BajaT.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="Images/Blob.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="Images/Fozzy.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="Images/Hatchback.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                    </div>                  
+                </div>
+            </div>
+       <!--</section>-->
+
+        <!-- The Modal/Lightbox-->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <!-- Slide 1-->
+                <div class="mySlides">
+                    <div class="numbertext">1/5</div>
+                    <img src="Images/22B.jpg" style="width:100%">
+                </div>
+                
+                <!-- Slide 2-->
+                <div class="mySlides">
+                    <div class="numbertext">2/5</div>
+                    <img src="Images/BajaT.jpg" style="width:100%">
+                </div>
+
+                <!-- Slide 3-->
+                <div class="mySlides">
+                    <div class="numbertext">3/5</div>
+                    <img src="Images/Blob.jpg" style="width:100%">
+                </div>
+
+                <!-- Slide 4-->
+                <div class="mySlides">
+                    <div class="numbertext">4/5</div>
+                    <img src="Images/Fozzy.jpg" style="width:100%">
+                </div>
+
+                <!-- Slide 5-->
+                <div class="mySlides">
+                    <div class="numbertext">5/5</div>
+                    <img src="Images/Hatchback.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/Previous controls-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption Text-->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail Image Controls-->
+                <div class="column">
+                    <img class="demo" src="Images/22B.jpg" style="width:100%" onclick="currentSlide(1)" alt="The legendary 22B STI">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="Images/BajaT.jpg" style="width:100%" onclick="currentSlide(2)" alt="The infamous Baja Turbo">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="Images/Blob.jpg" style="width:100%" onclick="currentSlide(3)" alt="The classic Blobeye">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="Images/Fozzy.jpg" style="width:100%" onclick="currentSlide(4)" alt="The outdoorsman favorite Forester">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="Images/Hatchback.jpg" style="width:100%" onclick="currentSlide(5)" alt="The hatchback of all hatchbacks, the Stinkeye">
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEOS -->
+		<div id="videos">
+			<div>
+				<div>
+					<h3> Watch the best of Colin McRae in the famous 22B STI</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/bS41Ymal0L0" frameborder="0" 
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+        </section>
+        
+        <br><br><br><br>
+		<!-- DISCUSSIONS -->
+		<div id="discussions">
+			<div>
+				<h3>Discussion Board</h3>
+				<div>
+					<form action="" method="get">
+						User Name: <input type="text" name="First_Name"><br><br>
+						Email: <input type="text" name="Email"><br><br>
+						Password: <input type="password" name="Password">
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<br><br><br><br><br><br><br><br>
+		<!-- FOOTER -->
+		<footer>
+			<p>Author: Kyle Dircksen<br>
+			</p>
+		</footer>
+</body>
+</html>
